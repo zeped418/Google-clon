@@ -23,7 +23,6 @@ html {
 body {
     width: 100vw;
     height: 100vh;
-    background-image: url("");
 }
 
 a {
@@ -244,8 +243,7 @@ footer {
     }
 
     .grid-container {
-        margin-top: 100px;
-        width: 40%;
+        display: none;
     }
 
     footer {
