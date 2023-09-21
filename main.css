@@ -1,0 +1,285 @@
+/* iconos de google */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("");
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav .nav-mobile {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 10px 0 10px;
+}
+
+.nav-mobile ul {
+    display: flex;
+    list-style: none;
+    justify-self: end;
+}
+
+.nav-mobile ul img {
+    border-radius: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+header nav .nav-right-section {
+    display: none;
+}
+
+main {
+    text-align: center;
+    margin-top: 110px;
+}
+
+.main-logo {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.main-logo img {
+    height: auto;
+    width: 50%;
+}
+
+.main-input {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.main-input-container {
+    width: 100%;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px 0 4px;
+}
+
+main .main-input input {
+    width: 80%;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, .87);
+}
+
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+.micro,
+.camera {
+    height: 24px;
+    width: 24px;
+}
+
+.search-icons-right {
+    padding: 0 8px;
+}
+
+main .main-buttons {
+    display: none;
+}
+
+/* Creamos un grid de 2 filas y 4 columnas */
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    /* Dos filas de igual tamaño */
+    grid-template-columns: repeat(4, 1fr);
+    /* Cuatro columnas de igual tamaño */
+    gap: 10px;
+    /* Espacio entre las celdas del grid */
+    width: 80%;
+    /* Ancho del grid, puedes ajustarlo según tus necesidades */
+    margin: 0 auto;
+    /* Centramos el grid en la página */
+    row-gap: 15px;
+}
+
+/* Estilizamos los elementos dentro del grid */
+.item {
+    width: 50px;
+    height: 50px;
+}
+
+
+footer {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .main-logo img {
+        width: 40%;
+    }
+
+    .main-input {
+        width: 70%;
+    }
+
+    .grid-container {
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+
+    .nav-mobile {
+        display: none;
+        visibility: hidden;
+    }
+
+    header nav .nav-right-section {
+        display: flex;
+        width: 250px;
+        height: auto;
+        list-style: none;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 15px;
+        margin-right: 20px;
+    }
+
+    nav .nav-right-section a {
+        margin-right: 15px;
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    .material-symbols-outlined {
+        margin-left: 10px;
+    }
+
+    nav .nav-right-section img {
+        border-radius: 50%;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 20px;
+    }
+
+    .main-logo img {
+        width: 25%;
+    }
+
+    .main-input {
+        width: 40%;
+    }
+
+    main .main-buttons {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    main .main-buttons div {
+        display: inline-block;
+    }
+
+    main .main-buttons button {
+        height: 3.6rem;
+        background-color: #f8f9fa;
+        border: 0;
+        font-size: 1.6rem;
+        color: #3c4043;
+        border-radius: 4px;
+        padding: 0 15px;
+        margin: 0 8px;
+    }
+
+    main .main-buttons button:hover {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+        background-color: #f8f9fa;
+        border: 1px solid #dadce0;
+        color: #202124;
+        cursor: pointer;
+    }
+
+    .grid-container {
+        margin-top: 100px;
+        width: 40%;
+    }
+
+    footer {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        font-size: 1.6rem;
+        background-color: #f2f2f2;
+        border-top: 1px solid #e4e4e4;
+        color: #70757a;
+        flex-wrap: wrap;
+    }
+
+    footer .footer-left,
+    footer .footer-right {
+        display: flex;
+        list-style: none;
+    }
+
+    footer .footer-left {
+        justify-content: flex-start;
+    }
+
+    footer .footer-right {
+        justify-content: flex-end;
+        margin-right: 2.5%;
+    }
+
+    footer .footer-left a,
+    footer .footer-right a {
+        padding: 15px;
+    }
+}
